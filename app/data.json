@@ -1,0 +1,36 @@
+{
+    "title": "Space Pirates",
+    "genre": "Shoot 'em up",
+    "tap": "6+",
+    "esrp": "E",
+    "summary": "You are a space pirate who has to successfully travel planet to planet while fighting off enemy ships. Each ship you destroy you get their loot and your score goes up.",
+    "ui": "The color scheme and design that I chose for my UI fits my game design because it uses pretty commonly used colors for the items across other games. Such as the health, health can refer to blood so an easy color to remember it is red. Shield is a distinc item that protects you from being damaged so I gave it a pretty distinct color of purple. And the lasers that are being fired from the weapons I made blue because they would be easy to see.",
+    "assets": {
+        "enemyLaser": "Sci-Fi Sounds (1.0) Created/distributed by Kenney (www.kenney.nl) Creation date: 11-10-2020",
+        "titleMusic": "https://mixkit.co/free-stock-music/",
+        "pickupSound": "RPG Audio by  Kenney Vleugels (Kenney.nl)",
+        "explosion": "Sci-Fi Sounds (1.0) Created/distributed by Kenney (www.kenney.nl) Creation date: 11-10-2020",
+        "components": "Camera, Particle System x2 (Thrusters)",
+        "scripts": "InputHandler.js (Movement) - Using the this.app.keyboard.isPressed method to check for A and D inputs on the keyboard. Movement left or right uses the this.entity.translate method to move the ship left or right. Particle systems use linear velocity to emit them backward and switch color from red to yellow to black."
+    },
+    "story": {
+        "exposition": "You are an adventurer who travels by ship from planet to planet doing quests and trading items.",
+        "ii": "The space pirate “Saw” spotted your ship and the items you’ve acquired in your travels and wants to steal them. The player narrowly escapes.",
+        "ra": " The character can no longer quest knowing that Saw and his team of pirates are in pursuit. So the player must quest to find Saw first, defeating his army of space pirates along the way.",
+        "climax": "When the player finally reaches Saw, they must defeat his ship that is made up of powerful parts from other ships he has stolen in his travels. When his health is low, he turns on his boosters and runs away!",
+        "fa": "This means the player will need to continue defeating enemies while pursuing the antagonist. The player starts earning powerups to upgrade their ship before finally catching up to the boss again, this time to defeat him.",
+        "res": "After defeating Saw, the player returns to the nearest planet a hero, with the entire planet watching what had unfolded. They no longer need to worry about Saw and his pirate army stealing from them"
+    },
+    "controls": {
+        "forwards": "W",
+        "backwards": "S",
+        "left": "A",
+        "right": "D",
+        "shoot": "Space"
+    },
+    "scenes": {
+        "mainMenu": "Intro to the game shows the options and allows interaction between different scenes",
+        "level1": "The first level of the game included with multiple enemies a score counter and a timer.",
+        "credits": "Shows all of the game credits"
+    }
+}
