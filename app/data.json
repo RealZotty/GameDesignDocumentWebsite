@@ -32,5 +32,9 @@
         "mainMenu": "Intro to the game shows the options and allows interaction between different scenes",
         "level1": "The first level of the game included with multiple enemies a score counter and a timer.",
         "credits": "Shows all of the game credits"
+    },
+    "mda": {
+        "difficuly": "Average",
+        "game-flow": "The first three levels of the game will introduce the basic functions of the player's aircraft and guide players how to progress to future levels. Starting at level five and every five levels after that the player will encounter a boss that is unique and use their learned skills to defeat the boss. If the player cannot take on the boss they need to go back and repeat the previous levels to gain the apt powerups in order to effecively attack the boss."
     }
 }

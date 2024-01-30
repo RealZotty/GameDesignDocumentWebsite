@@ -11,6 +11,7 @@ export default function Home() {
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#story'>Story</a>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#controls'>Controls</a>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#scenes'>Scenes</a>
+            <a className='font-bold font-gdd text-xl hover:text-red-500' href='#mda'>MDA</a>
         </div>
       </div>
        <div className='h-full w-full flex flex-col items-center justify-center' id='body'>
@@ -62,6 +63,11 @@ export default function Home() {
                     <span><h1 className='text-xl font-bold text-gdd'>Main Menu: <span className='font-normal text-gray-400 px-2'>{data.scenes.mainMenu}</span></h1></span>
                     <span><h1 className='text-xl font-bold text-gdd'>Level 1: <span className='font-normal text-gray-400 px-2'>{data.scenes.level1}</span></h1></span>
                     <span><h1 className='text-xl font-bold text-gdd'>Credits: <span className='font-normal text-gray-400 px-2'>{data.scenes.credits}</span></h1></span>
+                  </div>
+                  <h1 id='mda' className='text-center text-red-500 font-bold font-gdd text-3xl p-6'>MDA</h1>
+                  <div className='m-6 flex flex-col gap-4'>
+                    <span><h1 className='text-xl font-bold text-gdd'>Difficulty: <span className='font-normal text-gray-400 px-2'>{data.mda.difficuly}</span></h1></span>
+                    <span><h1 className='text-xl font-bold text-gdd'>Game Flow: <span className='font-normal text-gray-400 px-2'>{data.mda['game-flow']}</span></h1></span>
                   </div>
                 </div>
           </div>
