@@ -2,7 +2,7 @@ FROM node:18 as base
 
 RUN npm install -g serve
 
-RUN npx react-scripts build
+RUN npm run build
 
 WORKDIR /gdd
 
