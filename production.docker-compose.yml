@@ -6,9 +6,9 @@ services:
       dockerfile: ./Dockerfile
       target: deps
     ports:
-      - "${PORT_CLIENT}:${PORT_CLIENT}"
+      - "${PORT}:${PORT}"
     expose:
-      - ${PORT_CLIENT}
+      - ${PORT}
     networks:
       - gdd
     restart: always
