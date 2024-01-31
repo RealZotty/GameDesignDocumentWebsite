@@ -12,4 +12,4 @@ RUN pnpm install
 
 RUN pnpm run build
 
-CMD ["serve", "-s", "build", "-l", "24122"]
+CMD ["npx", "serve", "-s", "build", "-l", "24122"]
