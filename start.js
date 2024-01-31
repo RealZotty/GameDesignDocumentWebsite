@@ -1,4 +1,13 @@
-var shell = require("shelljs");
+const express = require('express');
+const path = require('path');
+const app = express();
+require('dotenv').config()
 
-shell.exec("npm run build");
-shell.exec('npm run start')
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+app.listen(process.env.PORT);
+console.log(`Listening on ${process.env.PORT}`)
