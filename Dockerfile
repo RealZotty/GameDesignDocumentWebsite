@@ -1,6 +1,7 @@
 FROM node:18 as base
 
 RUN npm install -g pnpm
+RUN npm install serve -g
 
 WORKDIR /gdd
 
