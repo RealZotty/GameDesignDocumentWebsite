@@ -10,4 +10,6 @@ FROM base as deps
 
 RUN pnpm install
 
+RUN pnpm run build
+
 CMD ["serve", "-s", "build", "-l", "24015"]
