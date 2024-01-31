@@ -1,9 +1,11 @@
-import Image from 'next/image';
+import logo from './logo.svg';
+import './App.css';
 import data from './data.json'
 
-export default function Home() {
+function App() {
   return (
-    <main className="flex min-h-screen h-full flex-col items-center justify-between px-24 py-12">
+    <body className="App">
+      <main className="flex min-h-screen h-full flex-col items-center justify-between px-24 py-12">
       <div className='fixed left-20 top-[15%]'>
         <div className='h-fit w-[250px] text-center bg-[#1b1a1a] rounded-lg gap-4 flex flex-col p-4'>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#overview'>Overview</a>
@@ -73,5 +75,8 @@ export default function Home() {
           </div>
        </div>
     </main>
-  )
+    </body>
+  );
 }
+
+export default App;
