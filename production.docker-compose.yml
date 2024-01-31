@@ -1,0 +1,18 @@
+services:
+  client:
+    container_name: "gdd"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: deps
+    ports:
+      - "${PORT_CLIENT}:${PORT_CLIENT}"
+    expose:
+      - ${PORT_CLIENT}
+    networks:
+      - gdd
+    restart: always
+
+networks:
+  gdd:
+    external: true
