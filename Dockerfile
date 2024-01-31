@@ -6,12 +6,10 @@ WORKDIR /gdd
 
 COPY . ./
 
-ENV PORT 21222
-
 FROM base as deps
 
 RUN pnpm install
 
 RUN pnpm run build
 
-CMD ["serve", "-s", "build", "-l", "21222"]
+CMD ["serve", "-s", "build", "-l", "24122"]
