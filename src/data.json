@@ -29,12 +29,15 @@
         "shoot": "Space"
     },
     "scenes": {
-        "mainMenu": "Intro to the game shows the options and allows interaction between different scenes",
-        "level1": "The first level of the game included with multiple enemies a score counter and a timer.",
+        "mainMenu": "Intro to the game shows the options and allows interaction between different scenes. I added a SSAO effect to the camera which darkens the scene and adds a gloomy effect that really pushes the mood of the scene.",
+        "level1": "The first level of the game included multiple enemies, a score counter, and a timer. The camera at this level also has an FXAA post-processing effect. This effect smooths the scene and pulls all the elements together to provide a clean natural look.",
         "credits": "Shows all of the game credits"
     },
     "mda": {
         "difficuly": "Average",
         "game-flow": "The first three levels of the game will introduce the basic functions of the player's aircraft and guide players how to progress to future levels. Starting at level five and every five levels after that the player will encounter a boss that is unique and use their learned skills to defeat the boss. If the player cannot take on the boss they need to go back and repeat the previous levels to gain the apt powerups in order to effecively attack the boss."
+    },
+    "roadmap": {
+        "post-effects": "I plan on adjusting the effects I already have in my levels to make them fit the scene more and pull everything together. I also plan to look at some of the blending effects to try and create a super smooth look that pulls all the edges and elements together correctly."
     }
 }
