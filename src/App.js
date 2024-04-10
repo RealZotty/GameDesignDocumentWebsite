@@ -10,11 +10,13 @@ function App() {
         <div className='h-fit w-[250px] text-center bg-[#1b1a1a] rounded-lg gap-4 flex flex-col p-4'>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#overview'>Overview</a>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#assets'>Assets</a>
+            <a className='font-bold font-gdd text-xl hover:text-red-500' href='#art'>Art</a>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#story'>Story</a>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#controls'>Controls</a>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#scenes'>Scenes</a>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#mda'>MDA</a>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#roadmap'>RoadMap</a>
+            <a className='font-bold font-gdd text-xl hover:text-red-500' href='#changelog'>Change Log</a>
         </div>
       </div>
        <div className='h-full w-full flex flex-col items-center justify-center' id='body'>
@@ -38,6 +40,10 @@ function App() {
                     <span><h1 className='text-xl font-bold text-gdd'>Title Music: <a href='https://mixkit.co/free-stock-music/' className='font-normal text-gray-400 px-2'>{data.assets.titleMusic}</a></h1></span>
                     <span><h1 className='text-xl font-bold text-gdd'>Pickup Sound: <a href='https://www.kenney.nl' className='font-normal text-gray-400 px-2'>{data.assets.pickupSound}</a></h1></span>
                     <span><h1 className='text-xl font-bold text-gdd'>Explosion: <a href='https://www.kenney.nl' className='font-normal text-gray-400 px-2'>{data.assets.explosion}</a></h1></span>
+                  </div>
+                  <h1 id='art' className='text-center text-red-500 font-bold font-gdd text-3xl p-6'>Art</h1>
+                  <div className='m-6 flex flex-col gap-4'>
+                    <span><h1 className='text-xl font-bold text-gdd'>User Interface: <span className='font-normal text-gray-400 px-2'>{data.art.ui}</span></h1></span>
                   </div>
                   <h1 className='text-center text-red-500 font-bold font-gdd text-3xl p-6'>Hero Craft</h1>
                   <div className='m-6 flex flex-col gap-4'>
@@ -75,6 +81,10 @@ function App() {
                   <h1 id='roadmap' className='text-center text-red-500 font-bold font-gdd text-3xl p-6'>RoadMap</h1>
                   <div className='m-6 flex flex-col gap-4'>
                     <span><h1 className='text-xl font-bold text-gdd'>Post Processing Effects: <span className='font-normal text-gray-400 px-2'>{data.roadmap['post-effects']}</span></h1></span>
+                  </div>
+                  <h1 id='changelog' className='text-center text-red-500 font-bold font-gdd text-3xl p-6'>Change Log</h1>
+                  <div className='m-6 flex flex-col gap-4'>
+                    <span><h1 className='text-xl font-bold text-gdd'>V.1.3.0: <span className='font-normal text-gray-400 px-2'>{data.changelog['v.1.3.0']}</span></h1></span>
                   </div>
                 </div>
           </div>

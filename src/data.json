@@ -13,6 +13,9 @@
         "components": "Camera, Particle System x2 (Thrusters)",
         "scripts": "InputHandler.js (Movement) - Using the this.app.keyboard.isPressed method to check for A and D inputs on the keyboard. Movement left or right uses the this.entity.translate method to move the ship left or right. Particle systems use linear velocity to emit them backward and switch color from red to yellow to black."
     },
+    "art": {
+        "ui": "The UI consists of six elements those are the watermark, timer, score, health, shield, and ammo. I chose to seperate the different elements based on their groups, I left all of the important information at the bottom such as the ships health, shield, and ammo, and I left the watermark, timer, and score counter at the top so it is all organized."
+    },
     "story": {
         "exposition": "You are an adventurer who travels by ship from planet to planet doing quests and trading items.",
         "ii": "The space pirate “Saw” spotted your ship and the items you’ve acquired in your travels and wants to steal them. The player narrowly escapes.",
@@ -39,5 +42,8 @@
     },
     "roadmap": {
         "post-effects": "I plan on adjusting the effects I already have in my levels to make them fit the scene more and pull everything together. I also plan to look at some of the blending effects to try and create a super smooth look that pulls all the edges and elements together correctly."
+    },
+    "changelog": {
+        "v.1.3.0": "Adjusted the UI elements in the level one scene to make it look more aesthetically pleasing. This included rearranging where all of the elements are positioned except for the timer and the score, those elements were only adjusted to look more balanced. (All prior versions are compiled into this one version log, change logs were added 4/10/2024)."
     }
 }
