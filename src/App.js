@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import data from './data.json'
+import { saveAs } from 'file-saver';
 
 function App() {
   function changeLog() {
@@ -20,6 +21,9 @@ function App() {
       return comment.push(<span><h1 className='text-xl font-bold text-gdd'>{x}<span className='font-normal text-gray-400 px-2'>{value}</span></h1></span>)
   })
   return comment
+  }
+  function save() {
+    saveAs('/GameDesignV.1.3.2.zip', "spacePiratesV.1.3.2.zip")
   }
   return (
     <body className="App">
@@ -112,7 +116,7 @@ function App() {
                   </div>
                   <h1 id='download' className='text-center text-red-500 font-bold font-gdd text-3xl p-6'>Download</h1>
                   <div className='m-6 flex flex-col gap-4'>
-                    <a href='/' download={'GameDesignV1.3.2.zip'}><h1 className='text-xl font-bold text-gdd hover:text-[blue]'>Click Here: <span className='font-normal text-gray-400 px-2'></span></h1></a>
+                    <a onClick={save} className='hover:cursor-pointer'><h1 className='text-xl font-bold text-gdd hover:text-[#5dcee2]'>Click Here: <span className='font-normal text-gray-400 px-2'></span></h1></a>
                   </div>
                 </div>
           </div>
