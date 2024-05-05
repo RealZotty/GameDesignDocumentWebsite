@@ -3,6 +3,24 @@ import './App.css';
 import data from './data.json'
 
 function App() {
+  function changeLog() {
+    let change = [];
+    let keys = Object.keys(data.changelog);
+          keys.map((x) => {
+              let value = data.changelog[x];
+              return change.push(<span><h1 className='text-xl font-bold text-gdd'>{x}<span className='font-normal text-gray-400 px-2'>{value}</span></h1></span>)
+          })
+    return change
+  }
+  function comments() {
+    let comment = [];
+    let keys = Object.keys(data.comments)
+    keys.map((x) => {
+      let value = data.comments[x];
+      return comment.push(<span><h1 className='text-xl font-bold text-gdd'>{x}<span className='font-normal text-gray-400 px-2'>{value}</span></h1></span>)
+  })
+  return comment
+  }
   return (
     <body className="App">
       <main className="flex min-h-screen h-full flex-col items-center justify-between px-24 py-12">
@@ -17,6 +35,8 @@ function App() {
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#mda'>MDA</a>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#roadmap'>RoadMap</a>
             <a className='font-bold font-gdd text-xl hover:text-red-500' href='#changelog'>Change Log</a>
+            <a className='font-bold font-gdd text-xl hover:text-red-500' href='#comments'>Comments</a>
+            <a className='font-bold font-gdd text-xl hover:text-red-500' href={'#download'}>Download</a>
         </div>
       </div>
        <div className='h-full w-full flex flex-col items-center justify-center' id='body'>
@@ -84,7 +104,15 @@ function App() {
                   </div>
                   <h1 id='changelog' className='text-center text-red-500 font-bold font-gdd text-3xl p-6'>Change Log</h1>
                   <div className='m-6 flex flex-col gap-4'>
-                    <span><h1 className='text-xl font-bold text-gdd'>V.1.3.0: <span className='font-normal text-gray-400 px-2'>{data.changelog['v.1.3.0']}</span></h1></span>
+                    {changeLog()}
+                  </div>
+                  <h1 id='comments' className='text-center text-red-500 font-bold font-gdd text-3xl p-6'>Comments</h1>
+                  <div className='m-6 flex flex-col gap-4'>
+                    {comments()}
+                  </div>
+                  <h1 id='download' className='text-center text-red-500 font-bold font-gdd text-3xl p-6'>Download</h1>
+                  <div className='m-6 flex flex-col gap-4'>
+                    <a href='/' download={'GameDesignV1.3.2.zip'}><h1 className='text-xl font-bold text-gdd hover:text-[blue]'>Click Here: <span className='font-normal text-gray-400 px-2'></span></h1></a>
                   </div>
                 </div>
           </div>

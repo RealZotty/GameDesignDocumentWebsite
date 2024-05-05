@@ -44,6 +44,11 @@
         "post-effects": "I plan on adjusting the effects I already have in my levels to make them fit the scene more and pull everything together. I also plan to look at some of the blending effects to try and create a super smooth look that pulls all the edges and elements together correctly."
     },
     "changelog": {
-        "v.1.3.0": "Adjusted the UI elements in the level one scene to make it look more aesthetically pleasing. This included rearranging where all of the elements are positioned except for the timer and the score, those elements were only adjusted to look more balanced. (All prior versions are compiled into this one version log, change logs were added 4/10/2024)."
-    }
+        "v.1.3.0": "Adjusted the UI elements in the level one scene to make it look more aesthetically pleasing. This included rearranging where all of the elements are positioned except for the timer and the score, those elements were only adjusted to look more balanced. (All prior versions are compiled into this one version log, change logs were added 4/10/2024).",
+        "v.1.3.2": "Implemented a character introduction scene to introduce the enemy and the hero. Adjusted the placements and the background of the intro scene to provide an immersive experience. Designed an ammo power up and a shield powerup and added them to the testing scene of the game."
+    },
+    "comments": {
+        "v.1.3.2": "Working on this version for the game I had to use a 3d modeling software called tinkercad to make some of the assets. While using the software I discovered that it is very easy to add objects to the environment and tweak them any way you see fit as well as changing the color of the objects and editing the objects themselves. I would like to learn more about the alignment system in tinkercad, I had a semi-difficult time attempting to align some of the assets with each other. Nonetheless I plan to continue using the software and maybe even designing some more assets such as buildings or meteors."
+    },
+    "download": "../src/downloads/"
 }
