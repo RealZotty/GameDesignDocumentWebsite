@@ -63,7 +63,8 @@ function App() {
                     <span><h1 className='text-xl font-bold text-gdd'>Enemy Laser: <a href='https://www.kenney.nl' className='font-normal text-gray-400 px-2'>{data.assets.enemyLaser}</a></h1></span>
                     <span><h1 className='text-xl font-bold text-gdd'>Title Music: <a href='https://mixkit.co/free-stock-music/' className='font-normal text-gray-400 px-2'>{data.assets.titleMusic}</a></h1></span>
                     <span><h1 className='text-xl font-bold text-gdd'>Pickup Sound: <a href='https://www.kenney.nl' className='font-normal text-gray-400 px-2'>{data.assets.pickupSound}</a></h1></span>
-                    <span><h1 className='text-xl font-bold text-gdd'>Explosion: <a href='https://www.kenney.nl' className='font-normal text-gray-400 px-2'>{data.assets.explosion}</a></h1></span>
+                    <span><h1 className='text-xl font-bold text-gdd'>Health Pack: <a href={data.assets.healthPowerup.link} className='font-normal hover:border-b border-b-gray-400 text-gray-400 px-2'>{data.assets.healthPowerup.text}</a></h1></span>
+                    <span><h1 className='text-xl font-bold text-gdd'>Ammo Powerup: <a href={data.assets.ammoPowerup.link} className='font-normal hover:border-b border-b-gray-400 text-gray-400 px-2'>{data.assets.ammoPowerup.text}</a></h1></span>
                   </div>
                   <h1 id='art' className='text-center text-red-500 font-bold font-gdd text-3xl p-6'>Art</h1>
                   <div className='m-6 flex flex-col gap-4'>

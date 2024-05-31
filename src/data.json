@@ -11,7 +11,15 @@
         "pickupSound": "RPG Audio by  Kenney Vleugels (Kenney.nl)",
         "explosion": "Sci-Fi Sounds (1.0) Created/distributed by Kenney (www.kenney.nl) Creation date: 11-10-2020",
         "components": "Camera, Particle System x2 (Thrusters)",
-        "scripts": "InputHandler.js (Movement) - Using the this.app.keyboard.isPressed method to check for A and D inputs on the keyboard. Movement left or right uses the this.entity.translate method to move the ship left or right. Particle systems use linear velocity to emit them backward and switch color from red to yellow to black."
+        "scripts": "InputHandler.js (Movement) - Using the this.app.keyboard.isPressed method to check for A and D inputs on the keyboard. Movement left or right uses the this.entity.translate method to move the ship left or right. Particle systems use linear velocity to emit them backward and switch color from red to yellow to black.",
+        "healthPowerup": {
+            "text": "Asset created by Zotty.",
+            "link": "https://www.tinkercad.com/things/jBSThmPgjzP-health-pack?sharecode=BruhiIhE2nAq-mSj_hnQfn7RT0PCxOlttadXkssynrY"
+        },
+        "ammoPowerup": {
+            "text": "Asset created by Zotty.",
+            "link": "https://www.tinkercad.com/things/84EeEVH2Z3P-ammo-powerup?sharecode=9Iqgho9J7aka0UTmdf2666YvkiLW44nKInY9N3fqEbg"
+        }
     },
     "art": {
         "ui": "The UI consists of six elements those are the watermark, timer, score, health, shield, and ammo. I chose to seperate the different elements based on their groups, I left all of the important information at the bottom such as the ships health, shield, and ammo, and I left the watermark, timer, and score counter at the top so it is all organized."
@@ -46,9 +54,10 @@
     "changelog": {
         "v.1.3.0": "Adjusted the UI elements in the level one scene to make it look more aesthetically pleasing. This included rearranging where all of the elements are positioned except for the timer and the score, those elements were only adjusted to look more balanced. (All prior versions are compiled into this one version log, change logs were added 4/10/2024).",
         "v.1.3.2": "Implemented a character introduction scene to introduce the enemy and the hero. Adjusted the placements and the background of the intro scene to provide an immersive experience. Designed an ammo power up and a shield powerup and added them to the testing scene of the game.",
-        "v.1.3.3": "Added transtions between the dialouge and added two new dialouge messages."
+        "v.1.3.3": "Added transtions between the dialouge and added two new dialouge messages. New enemy type (not integrated into the levels yet)."
     },
     "comments": {
-        "v.1.3.2": "Working on this version for the game I had to use a 3d modeling software called tinkercad to make some of the assets. While using the software I discovered that it is very easy to add objects to the environment and tweak them any way you see fit as well as changing the color of the objects and editing the objects themselves. I would like to learn more about the alignment system in tinkercad, I had a semi-difficult time attempting to align some of the assets with each other. Nonetheless I plan to continue using the software and maybe even designing some more assets such as buildings or meteors."
+        "v.1.3.2": "Working on this version for the game I had to use a 3d modeling software called tinkercad to make some of the assets. While using the software I discovered that it is very easy to add objects to the environment and tweak them any way you see fit as well as changing the color of the objects and editing the objects themselves. I would like to learn more about the alignment system in tinkercad, I had a semi-difficult time attempting to align some of the assets with each other. Nonetheless I plan to continue using the software and maybe even designing some more assets such as buildings or meteors.",
+        "v.1.3.3": "Added powerup assets to GDD. Created a second enemy that shoots back at the player. Old enemy ship was missing from the testing scene so I had to recreate the particle system. Added a game over scene but I already created a game over function when the timer runs out in the level scene so I was going to just reuse and recycle that block of code. I have alot of plans for this game as a side project, I am going to keep iterating and working on my coding skill by messing with this game project and advancing the systems in it."
     }
 }
